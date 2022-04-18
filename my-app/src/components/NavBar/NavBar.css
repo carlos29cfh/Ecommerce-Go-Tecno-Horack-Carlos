@@ -9,17 +9,24 @@
 }
 
 .navbar a{
-    padding: 25px;
+    padding: 20px;
     text-decoration: none;
     color: black;
     display: flex;
     right: 50%;
+    margin: 10px;
 }
 
 .logo h1{
     position: absolute;
     margin-top: 10px;
     padding-left: 20px;
+}
+
+.logoCarrito{
+    position: absolute;
+    left: 90%;
+    top: 25px;
 }
 
 .navbar a:hover{
