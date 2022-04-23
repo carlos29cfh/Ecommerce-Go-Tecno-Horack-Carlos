@@ -1,9 +1,10 @@
 import React from 'react';
 import './LogoTienda.css';
-
+import logoTienda from './1-removebg-preview.png';
 function LogoTienda (props) {
     return (
-            <div className='logo'><h1>LaPasteleria</h1></div>
+            /*<div className='logo'><h1>LaPasteleria</h1></div>*/
+            <img className='logoTienda' src={logoTienda} alt='logo de la tienda'></img>
     );
 }
 

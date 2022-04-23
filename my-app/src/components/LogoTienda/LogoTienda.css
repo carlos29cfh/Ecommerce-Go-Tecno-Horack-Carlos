@@ -1,6 +1,14 @@
-.logo{
+/*.logo{
     font-size: 95%;
     position: absolute;
     top: -5px;
     margin-left: 10px;
+}*/
+
+.logoTienda{
+    width: 110px;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: -13px;
 }

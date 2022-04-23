@@ -1,0 +1,33 @@
+.count{
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    width: 20%;
+    padding: 20px;
+    position: absolute;
+    right: 39%;
+    top: 30%;
+}
+
+.count div{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.boton1{
+    width: 30px;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+.boton2{
+    width: 80px;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+.countinput{
+    text-align: center;
+    background-color: yellow;
+    width: 50px;
+}
