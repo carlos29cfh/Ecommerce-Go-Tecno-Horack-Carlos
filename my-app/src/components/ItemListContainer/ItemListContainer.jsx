@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 /*import ItemCount from '../ItemCount/ItemCount';*/
-import Item from '../Item/Item';
+/*import Item from '../Item/Item';*/
 import './ItemListContainer.css';
+import ItemList from '../ItemList/ItemList';
+import '../Item/Item.css';
 
 
 /*const ItemListContainer = (props) => {
@@ -16,8 +18,9 @@ import './ItemListContainer.css';
 )
 }*/
 
-function ItemListContainer(){
-  const itemList = [
+function productos(){
+  const myPromise = new Promise((resolve, reject) =>{
+    const productsList = [
     {
       id: 1,
       title: 'Reloj Smartwatch Gadnic-RWS10',
@@ -54,11 +57,27 @@ function ItemListContainer(){
       price: '$61.399',
       image: 'https://images.bidcom.com.ar/resize?src=https://www.bidcom.com.ar/publicacionesML/productos/TABSAM4X/1000x1000-TABSAM4X.jpg&h=220'
     }
-  ]
+    ];
+    setTimeout(() =>{
+      resolve(productsList);
+    }, 2000);
+  });
+  return myPromise;
+}
+
+function ItemListContainer({mostrar}){
+  const [products, setProducts] = useState([]);
+
+  useEffect(() =>{
+    productos()
+      .then(res => {
+        setProducts(res);
+      })
+  }, []);
 
   return(
     <div className='listContainer'>
-      {itemList.map((item, i) => <Item item={item} key={item.id} />)}
+      <ItemList items={products} />
     </div>
   )  
 }

@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <LogoTienda/>
-      <ItemListContainer title='Nuestros Productos'/>
+      <ItemListContainer mostrar='Mis Productos'/>
     </div>
   );
 }
