@@ -6,9 +6,9 @@
 }*/
 
 .logoTienda{
-    width: 110px;
+    width: 200px;
     display: flex;
     justify-content: end;
     position: absolute;
-    top: -13px;
+    bottom: 90%;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './LogoTienda.css';
-import logoTienda from './1-removebg-preview.png';
+import logoTienda from './logo.png';
 function LogoTienda (props) {
     return (
             /*<div className='logo'><h1>LaPasteleria</h1></div>*/
