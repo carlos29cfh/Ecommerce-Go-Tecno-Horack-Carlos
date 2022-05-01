@@ -4,8 +4,10 @@
     width: 20%;
     padding: 20px;
     position: absolute;
-    right: 39%;
+    right: 35%;
     top: 30%;
+    overflow: hidden;
+    height: 80px;
 }
 
 .count div{
@@ -21,9 +23,18 @@
 }
 
 .boton2{
-    width: 80px;
+    width: 130px;
     padding: 5px;
     margin: 5px 0px;
+    margin-right: 160px;
+}
+
+.boton3{
+    width: 130px;
+    padding: 5px;
+    margin-left: 120px;
+    position: absolute;
+    bottom: 11px;
 }
 
 .countinput{
