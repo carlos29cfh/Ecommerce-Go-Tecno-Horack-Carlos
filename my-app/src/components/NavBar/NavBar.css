@@ -18,6 +18,10 @@
     margin: 10px;
 }
 
+.nav-active{
+    font-weight: bold;
+}
+
 .logoCarrito{
     position: absolute;
     left: 90%;
