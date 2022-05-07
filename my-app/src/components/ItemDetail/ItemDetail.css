@@ -32,3 +32,23 @@
     left: 41%;
     margin: 100px;
 }
+
+.imageItem{
+    height: 125%;
+    object-fit: cover;
+}
+
+.detalleProducto h2, p{
+    display: flex;
+    justify-content: center;
+}
+
+.linkItemDetail{
+    text-decoration: none;
+}
+
+.botonItemDetail{
+    width: 55%;
+    margin-left: 70px;
+    background-color: #F8D4D4;
+}

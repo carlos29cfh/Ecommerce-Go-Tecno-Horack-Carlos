@@ -24,8 +24,8 @@ function ItemCount({stock, initial, onAdd}) {
                 <input className='countinput' readOnly value={count} />
                 <button className='boton1' onClick={() => restar()}>-</button>
             </div>
-            <button className='boton2' onClick={() => alert('Prodcuto agregado al carrito')(count <= stock) && onAdd()}>Agregar al carrito</button>
-            <button className='boton3' onClick={() => alert('Gracias por su compra') ()}>Comprar ahora</button>
+            <button className='boton2' onClick={() => (count <= stock) && onAdd(count)}>Agregar al carrito</button>
+            {/*<button className='boton3' onClick={() => alert('Gracias por su compra') ()}>Comprar ahora</button>*/}
         </div>
     )
 }

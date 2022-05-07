@@ -6,6 +6,7 @@ import ItemListContainer from './Pages/ItemListContainer/ItemListContainer';
 import LogoTienda from './components/LogoTienda/LogoTienda';
 import ItemDetailContainer from './Pages/ItemDetailContainer/ItemDetailContainer';
 import { Route, Routes } from 'react-router-dom';
+import Cart from './Pages/Cart/Cart';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <LogoTienda/>
       <Routes>
         <Route path='/' element={<ItemListContainer/>} />
+        <Route path='/cart' element={<Cart/>} />
         <Route path='/category/:categoryId' element={<ItemListContainer/>} />
         <Route path='/item/:id' element={<ItemDetailContainer/>} />
       </Routes>
