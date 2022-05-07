@@ -7,6 +7,7 @@ Ecommerce GO-Tecno es una tienda de productos tecnológicos.
 La idea de este proyecto es una tienda Ecommerce donde la persona pueda interactuar, visualizar productos, conocer lo último en tecnología y como así tambien poder comprar los productos de su interés.
 
 ## Visual
+![React App - Google Chrome 2022-05-04 13-41-53](https://user-images.githubusercontent.com/93627928/166848645-bd129ec0-5949-4e85-b442-97a5e95019e6.gif)
 
 
 ## Instalación
