@@ -12,14 +12,14 @@ import Cart from './Pages/Cart/Cart';
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <LogoTienda/>
-      <Routes>
-        <Route path='/' element={<ItemListContainer/>} />
-        <Route path='/cart' element={<Cart/>} />
-        <Route path='/category/:categoryId' element={<ItemListContainer/>} />
-        <Route path='/item/:id' element={<ItemDetailContainer/>} />
-      </Routes>
+        <NavBar/>
+        <LogoTienda/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>} />
+          <Route path='/cart' element={<Cart/>} />
+          <Route path='/category/:categoryId' element={<ItemListContainer/>} />
+          <Route path='/item/:id' element={<ItemDetailContainer/>} />
+        </Routes>
     </div>
   );
 }

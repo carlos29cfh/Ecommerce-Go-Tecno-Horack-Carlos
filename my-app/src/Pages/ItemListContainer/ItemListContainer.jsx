@@ -106,6 +106,7 @@ function ItemListContainer({mostrar}){
   const [products, setProducts] = useState([]);
   const { categoryId } = useParams();
 
+
   useEffect(() =>{
     productos(categoryId)
       .then(res => {
@@ -114,9 +115,9 @@ function ItemListContainer({mostrar}){
   }, [categoryId]);
 
   return(
-    <div className='listContainer'>
-      <ItemList items={products} />
-    </div>
+      <div className='listContainer'>
+        <ItemList items={products} />
+      </div>
   )  
 }
 
