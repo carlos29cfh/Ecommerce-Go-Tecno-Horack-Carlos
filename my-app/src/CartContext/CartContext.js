@@ -1,7 +1,7 @@
-import { createCartContext } from 'react';
+import { createContext } from 'react';
 import React, { useState } from 'react'
 
-const CartContext = createCartContext({
+const CartContext = createContext({
     products: [],
     addProducts: () => {},
     removeProducts: () => {},

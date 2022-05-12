@@ -1,6 +1,4 @@
 import './App.css';
-/*import './index.css';*/
-
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './Pages/ItemListContainer/ItemListContainer';
 import LogoTienda from './components/LogoTienda/LogoTienda';
