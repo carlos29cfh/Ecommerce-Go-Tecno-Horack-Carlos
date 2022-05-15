@@ -1,22 +1,8 @@
 import React, { useEffect, useState } from 'react';
-/*import ItemCount from '../ItemCount/ItemCount';*/
-/*import Item from '../Item/Item';*/
 import './ItemListContainer.css';
 import ItemList from '../../components/ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 
-
-/*const ItemListContainer = (props) => {
-  function carts(){
-    console.log('carts function');
-}
-
-  return(
-    <div className='listcount'>
-      <ItemCount initial={0} stock={10} onAdd={carts} />
-    </div>
-)
-}*/
 
 function productos(category){
   const myPromise = new Promise((resolve, reject) =>{

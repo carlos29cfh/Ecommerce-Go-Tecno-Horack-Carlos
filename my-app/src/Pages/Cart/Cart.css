@@ -1,4 +1,4 @@
-.Cart{
+/*.Cart{
     width: 80%;
     margin: 10%;
     padding-bottom: 15%;
@@ -15,4 +15,22 @@
     top: 40%;
     right: 41%;
     font-size: 25px;
+}*/
+
+.Cart{
+    display: flex;
+    justify-content: center;
+}
+
+.Inicio{
+    height: 35px;
+    position: absolute;
+    bottom: 60%;
+    font-weight: bold;
+    background-color: crimson;
+}
+
+.inicioLink{
+    text-decoration: none;
+    color: white;
 }

@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import CartContext from '../../CartContext/CartContext';
+import Globito from '../Globito/Globito';
 import './Item.css';
 
 function Item ({item}) {
+  const cartContext = useContext(CartContext);
+
   return (
-    /*<div className='contenedorDeTarjeta'>*/
+
     <div className='tarjeta'>
             <div className='imagen'>
                 <img src={item.image} alt="imagen del articulo" />
@@ -15,9 +19,11 @@ function Item ({item}) {
             <Link to={'/item/' + item?.id} className='agregar'>
               <button>Ver Producto</button>
             </Link>
+            <div className='botonSumarCarrito'>
+              <Globito isButton onGlobitoClick={() => cartContext.addProducts({quantity: 1, ...item})}>+</Globito>
+            </div>
         </div>
     </div>
-    /*</div>*/
   )
 }
 

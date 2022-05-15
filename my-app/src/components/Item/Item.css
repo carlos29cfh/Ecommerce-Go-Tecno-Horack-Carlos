@@ -1,13 +1,15 @@
 
 .tarjeta{
-    height: 350px;
+    height: 390px;
     width: 250px;
     margin: 5px;
     text-align: center;
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
     border-radius: 8px;
     background-color: #F8D4D4;
-    margin: 20px;
+    margin: 60px;
+    margin-right: 40px;
+    margin-top: -20px;
     display: grid;
     grid-auto-rows: auto;
 }
@@ -39,4 +41,12 @@ button{
 button:hover{
     color: tomato;
     box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+}
+
+.botonSumarCarrito{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    left: 45%;
+    top: 4%;
 }
