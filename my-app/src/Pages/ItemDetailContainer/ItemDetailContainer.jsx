@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetail from '../../components/ItemDetail/ItemDetail';
+import { doc, getDoc, getFirestore } from 'firebase/firestore';
 import './ItemDetailContainer.css';
 
 function producto (id){
-    const myPromise = new Promise((resolve, reject) =>{
+  const db = getFirestore();
+
+  const itemRef = doc(db, 'items', id);
+
+  return getDoc(itemRef);
+    /*const myPromise = new Promise((resolve, reject) =>{
       const productsList = [
         {
           id: 1,
@@ -84,7 +90,7 @@ function producto (id){
         resolve(item[0]);
       }, 2000);
     });
-    return myPromise;
+    return myPromise;*/
 }
 
 function ItemDetailContainer() {
@@ -93,8 +99,8 @@ function ItemDetailContainer() {
 
     useEffect(() => {
         producto(id)
-        .then(res => {
-            setItem(res);
+        .then(snapshot => {
+            setItem({...snapshot.data(), id: snapshot.id});
         })
         .catch(err => {
             console.log(err);
