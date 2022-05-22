@@ -5,6 +5,7 @@ import CartItem from '../../components/CartItem/CartItem';
 import './Cart.css';
 
 function Cart() {
+  
 
   const cartContext = useContext(CartContext);
 
@@ -15,7 +16,7 @@ function Cart() {
          {cartContext.products.length !== 0 ? 
           <div className='total'>
             <p>Importe Total: ${cartContext.precioTotal()}</p>
-            <button>Finalizar Compra</button>
+            <Link to='/Checkout'><button>Finalizar Compra</button></Link>
           </div> :
           <>
             <h2>No hay productos en el carrito</h2>
