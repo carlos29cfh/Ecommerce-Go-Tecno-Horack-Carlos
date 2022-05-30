@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import CartContext from '../../CartContext/CartContext'
 import Globito from '../Globito/Globito';
 import './CartWidget.css';
-import logoCarrito from './cartWidget.png';
+import logoCarrito from './cart.png';
 
 function CartWidget() {
     const cartContext = useContext(CartContext);

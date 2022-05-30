@@ -108,6 +108,7 @@ Es un proyecto para el curso de React Js, el cual estará teniendo bastantes com
 -CSS
 -JavaScript
 -Imagenes obtenidas de internet
+-FireBase
 
 ## Contacto
 Para más información sobre el proyecto, su desarrollo o alguna consulta adicional, puedes contactar a través de la siguiente dirección de correo: carloshorack1@gmail.com

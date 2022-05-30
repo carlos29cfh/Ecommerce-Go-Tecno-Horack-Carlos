@@ -1,3 +1,4 @@
+import { Button } from "react-bootstrap";
 import React, { useState } from 'react';
 
 import './ItemCount.css';
@@ -20,10 +21,10 @@ function ItemCount({stock, initial, onAdd}) {
     return (
         <div className='count'>
             <div>
-                <button className='boton1' onClick={() => sumar()}>+</button>
+                <Button variant="danger" className="botonSumar" onClick={() => sumar()}>+</Button>
                 <input className='countinput' readOnly value={count} />
-                <button className='boton1' onClick={() => restar()}>-</button>
-                <button className='boton2' onClick={() => (count <= stock) && onAdd(count)}>Agregar al carrito</button>
+                <Button variant="danger" className="botonRestar" onClick={() => restar()}>-</Button>
+                <Button variant="primary" className="botonAgregar" onClick={() => (count <= stock) && onAdd(count)}>Agregar al carrito</Button>
             </div>
         </div>
     )

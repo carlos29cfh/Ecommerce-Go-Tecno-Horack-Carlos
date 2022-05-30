@@ -1,3 +1,4 @@
+import { Button } from "react-bootstrap";
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import CartContext from '../../CartContext/CartContext';
@@ -17,7 +18,7 @@ function Item ({item}) {
             <div className='tituloDeTarjeta'>{item.title}</div>
             <div className='pieDeTarjeta'>{item.price}</div>
             <Link to={'/item/' + item?.id} className='agregar'>
-              <button>Ver Producto</button>
+              <Button variant="primary">Ver Producto</Button>
             </Link>
             <div className='botonSumarCarrito'>
               <Globito isButton onGlobitoClick={() => cartContext.addProducts({quantity: 1, ...item})}>+</Globito>

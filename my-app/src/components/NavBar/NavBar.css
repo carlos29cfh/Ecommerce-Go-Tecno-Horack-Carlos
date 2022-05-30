@@ -4,8 +4,6 @@
     list-style-type: none;
     background-color: #F8D4D4;
     color: white;
-    display: flex;
-    justify-content: center;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 }
 
@@ -25,10 +23,24 @@
 .logoCarrito{
     position: absolute;
     left: 92%;
-    bottom: 91%;
+    bottom: 61%;
 }
 
 .navbar a:hover{
     color: white;
 }
 
+.nav-active{
+    padding: 30%;
+    margin: 30%;
+}
+
+.logo-Tienda{
+    width: 600%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.contenedor-imagen{
+    width: 60px;
+}

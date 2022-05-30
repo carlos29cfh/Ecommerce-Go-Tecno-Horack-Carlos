@@ -1,25 +1,29 @@
 import React from 'react';
-import './NavBar.css';
-import { Link, NavLink } from 'react-router-dom';
+import './navbar.css';
+import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
 import logoTienda from '../LogoTienda/logo.png';
 import '../LogoTienda/LogoTienda.css';
+import { Navbar, Nav, Container  } from 'react-bootstrap';
 
 
 function NavBar(props) {
     return (
-        <div>
-            <Link to='/'>
-                <img className='logoTienda' src={logoTienda} alt='imagen de la tienda'></img>
-            </Link>
-            <ul className='navbar'>
-                <li><NavLink to='/' className={nav => nav.isActive ? 'nav-active' : ''}>Inicio</NavLink></li>
-                <li><NavLink to='/category/relojes' className={nav => nav.isActive ? 'nav-active' : ''}>Relojes</NavLink></li>
-                <li><NavLink to='/category/computacion' className={nav => nav.isActive ? 'nav-active' : ''}>Computación</NavLink></li>
-                <li><NavLink to='/category/limpieza' className={nav => nav.isActive ? 'nav-active' : ''}>Limpieza</NavLink></li>
-            </ul>
-            <CartWidget/>
-        </div>
+<>
+  <Navbar bg="dark" variant="dark">
+    <Container>
+    <Link to="/" className='contenedor-imagen'>
+      <img src= {logoTienda} className='logo-Tienda' alt='logo de la tienda' />
+    </Link>
+    <Nav className="mx-auto">
+      <Nav.Link as={Link} to="/category/relojes">Relojes</Nav.Link>
+      <Nav.Link as={Link} to="/category/computacion">Computación</Nav.Link>
+      <Nav.Link as={Link} to="/category/limpieza">Limpieza</Nav.Link>
+    </Nav>
+    <CartWidget/>
+    </Container>
+  </Navbar>
+</>
     );
 }
 
